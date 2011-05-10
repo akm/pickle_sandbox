@@ -13,6 +13,8 @@ module NavigationHelpers
     when /the new product page/
       new_product_path
 
+    when /the show page for (.+)/
+      polymorphic_path(model($1))
 
     # the following are examples using path_to_pickle
 
