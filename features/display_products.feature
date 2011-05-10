@@ -18,3 +18,4 @@ Feature: Display products
     Then I should see products table
       | Milk   | $2.99  |
       | Puzzle | $8.99  |
+    Then show me the page
