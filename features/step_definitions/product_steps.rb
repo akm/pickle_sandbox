@@ -12,3 +12,7 @@ end
 Then /^I should see the following products:$/ do |expected_products_table|
   expected_products_table.diff!(tableish('table tr', 'td,th'))
 end
+
+Then /^I should see products table$/ do |expected_table|
+  expected_table.diff!(tableish("table#products tr", "td" ).to_a)
+end
