@@ -1,3 +1,8 @@
+<table id="products">
 <% @products.each do |product| -%>
-  <%= product.name %>
+  <tr>
+    <td><%= product.name %></td>
+    <td><%= number_to_currency product.price %></td>
+  </tr>
 <% end -%>
+</table>
