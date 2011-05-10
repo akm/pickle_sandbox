@@ -8,3 +8,12 @@ Feature: Display products
     When I go to the show page for that product
     Then I should see "Milk" within "h1"
     And I should see "2.99"
+
+  Scenario: List products
+    Given the following products exist
+      | name   | price |
+      | Milk   | 2.99  |
+      | Puzzle | 8.99  |
+    When I go to the list of products
+    Then I should see "Milk"
+    And I should see "Puzzle"
