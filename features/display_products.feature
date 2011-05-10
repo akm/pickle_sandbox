@@ -16,5 +16,5 @@ Feature: Display products
       | Puzzle | 8.99  |
     When I go to path "/products"
     Then I should see products table
-      | Milk   | 2.99  |
-      | Puzzle | 8.99  |
+      | Milk   | $2.99  |
+      | Puzzle | $8.99  |
