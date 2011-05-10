@@ -29,3 +29,17 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :development, :test, :cucumber do
+  gem 'factory_girl_rails'
+  gem 'rails3-generators'
+
+  gem 'rspec', '>= 2.6.0.rc2'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+
+  gem 'pickle'
+end
