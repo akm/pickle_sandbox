@@ -16,6 +16,9 @@ module NavigationHelpers
     when /the show page for (.+)/
       polymorphic_path(model($1))
 
+    when /path "(.+)"/
+      $1
+
     # the following are examples using path_to_pickle
 
     when /^#{capture_model}(?:'s)? page$/                           # eg. the forum's page

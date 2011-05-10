@@ -14,6 +14,6 @@ Feature: Display products
       | name   | price |
       | Milk   | 2.99  |
       | Puzzle | 8.99  |
-    When I go to the list of products
+    When I go to path "/products"
     Then I should see "Milk"
     And I should see "Puzzle"
