@@ -1,6 +1,6 @@
 PickleSandbox::Application.routes.draw do
 
-  resources :products, :only => :show
+  resources :products, :only => [:index, :show]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
