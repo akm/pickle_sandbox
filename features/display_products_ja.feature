@@ -9,7 +9,7 @@
 
   シナリオ: 商品を表示する
     前提 次のproductが存在する name: "Milk", price: "2.99"
-    もし 商品の詳細ページを開く
+    もし "the show page for that product"ページを表示する
     ならば "h1" の中に "Milk" と表示されていること
     かつ "2.99" と表示されていること
 
