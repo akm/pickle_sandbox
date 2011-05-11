@@ -5,3 +5,7 @@
 Given(/^次の#{capture_model}が存在する(?: #{capture_fields})?$/) do |capture_model, capture_fields|
   Given %{#{capture_model} exists with #{capture_fields}}
 end
+
+Given(/^以下の#{capture_plural_factory}が存在する$/) do |capture_plural_factory, table|
+  Given %{the following #{capture_plural_factory} exist}, table
+end
