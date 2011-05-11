@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 module NavigationHelpers
   # Maps a name to a path. Used by the
   #
@@ -17,6 +18,9 @@ module NavigationHelpers
       polymorphic_path(model($1))
 
     when /path "(.+)"/
+      $1
+
+    when /パス(.+)/
       $1
 
     # the following are examples using path_to_pickle

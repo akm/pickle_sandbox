@@ -18,7 +18,7 @@
       | name   | price |
       | Milk   | 2.99  |
       | Puzzle | 8.99  |
-    もし パス"/products" を開く
+    もし "パス/products"ページを表示する
     ならば 以下の商品テーブルが表示されること
       | Milk   | $2.99  |
       | Puzzle | $8.99  |
