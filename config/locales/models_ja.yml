@@ -1,0 +1,9 @@
+ja:
+  activemodel:
+    models:
+      product: "商品"
+
+    attributes:
+      product:
+        name: "名称"
+        price: "価格"

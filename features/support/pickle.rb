@@ -39,8 +39,13 @@ module Pickle::I18n
   end
 end
 
-Pickle::I18n.model_translations["商品"] = "product"
-Pickle::I18n.model_attribute_translations["product"] = {"名称" => "name", "価格" => "price"}
+
+I18n.t(:activemodel, :locale => :ja).tap do |translations|
+  Pickle::I18n.model_translations.update(translations[:models].stringify_keys.invert)
+  translations[:attributes].each do |model_name, attrs|
+    Pickle::I18n.model_attribute_translations[model_name.to_s] = attrs.stringify_keys.invert
+  end
+end
 
 Pickle::Session.module_eval do
 
@@ -79,7 +84,6 @@ Pickle::Parser.module_eval do
     # "(?:(\\w+): #{capture_value})"
     "(?:\s*([^:]+): #{capture_value})"
   end
-
 end
 
 
