@@ -1,1 +1,1 @@
-# PickleI18n
+require 'pickle/i18n'
