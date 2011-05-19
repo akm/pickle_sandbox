@@ -43,4 +43,5 @@ group :development, :test, :cucumber do
   gem 'launchy'
 
   gem 'pickle'
+  gem 'pickle_i18n', '0.0.1'
 end
