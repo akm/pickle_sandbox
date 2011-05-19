@@ -29,5 +29,5 @@ require 'pickle/email/world'
 require 'pickle/i18n'
 
 Pickle.configure do |config|
-  Pickle::I18n.translate(config, :ja)
+  PickleI18n.translate(config, :ja)
 end
